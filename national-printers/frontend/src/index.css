@@ -1,0 +1,75 @@
+:root {
+  --gold: #f5c518;
+  --gold-light: #ffe566;
+  --red: #e63946;
+  --deep: #0d1b2a;
+  --navy: #112240;
+  --navy-light: #1a3a5c;
+  --cream: #f8f9ff;
+  --white: #ffffff;
+  --shadow: rgba(13, 27, 42, 0.15);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--cream);
+  color: var(--deep);
+  overflow-x: hidden;
+}
+
+section { padding: 80px 40px; }
+
+.section-tag {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  color: var(--deep);
+  font-weight: 900;
+  margin-bottom: 16px;
+}
+
+.section-title span { color: var(--red); }
+
+.btn-primary {
+  background: var(--gold);
+  color: var(--deep);
+  padding: 14px 34px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s;
+  box-shadow: 0 6px 24px rgba(201, 168, 76, 0.4);
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+}
+.btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+
+.btn-outline {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  color: var(--white);
+  padding: 14px 34px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  transition: all 0.3s;
+  display: inline-block;
+}
+.btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+@media (max-width: 900px) {
+  section { padding: 60px 20px; }
+}

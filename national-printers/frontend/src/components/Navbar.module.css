@@ -1,0 +1,90 @@
+.nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  background: rgba(13, 27, 75, 0.97);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 40px;
+  border-bottom: 2px solid #f5c518;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  color: var(--gold);
+  font-size: 1.2rem;
+  font-weight: 900;
+  line-height: 1.1;
+}
+.logo span {
+  color: #ccc;
+  font-size: 0.72rem;
+  display: block;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+.links a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+.links a:hover { color: var(--gold); }
+
+.right { display: flex; align-items: center; gap: 12px; }
+
+.cta {
+  background: var(--gold);
+  color: var(--deep);
+  padding: 8px 22px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: all 0.3s;
+}
+.cta:hover { background: var(--gold-light); }
+
+.burger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--gold);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .nav { padding: 10px 16px; }
+  .burger { display: block; }
+
+  .logo { font-size: 1rem; }
+  .logo span { display: none; } /* hide subtitle on mobile to save space */
+
+  .cta { padding: 7px 14px; font-size: 0.78rem; }
+
+  .links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: rgba(13, 27, 75, 0.99);
+    flex-direction: column;
+    padding: 20px;
+    gap: 16px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .links.open { display: flex; }
+}

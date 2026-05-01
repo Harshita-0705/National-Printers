@@ -1,0 +1,45 @@
+/* About — light */
+.section { background: #f8f9ff; }
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.text p { color: #334155; line-height: 1.8; margin-bottom: 16px; }
+
+.highlights {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.card {
+  background: #ffffff;
+  border-left: 4px solid var(--gold);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(13,27,42,0.07);
+}
+.card h4 { font-weight: 700; color: var(--deep); margin-bottom: 4px; font-size: 0.9rem; }
+.card p { color: #64748b; font-size: 0.82rem; line-height: 1.5; }
+
+.imgGrid { display: block; }
+.imgGrid img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(13,27,42,0.12);
+  background: #fff;
+}
+
+@media (max-width: 900px) {
+  .inner { grid-template-columns: 1fr; }
+  .highlights { grid-template-columns: 1fr; }
+}

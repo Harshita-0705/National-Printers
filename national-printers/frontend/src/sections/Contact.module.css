@@ -1,0 +1,77 @@
+/* Contact — light cream */
+.section { background: #f8f9ff; }
+
+.header { max-width: 1200px; margin: 0 auto 40px; }
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.info { display: flex; flex-direction: column; gap: 24px; }
+
+.item { display: flex; align-items: flex-start; gap: 18px; }
+
+.iconBox {
+  width: 52px; height: 52px; min-width: 52px;
+  background: linear-gradient(135deg, #0d1b2a, #1a3a5c);
+  border-radius: 14px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem;
+  box-shadow: 0 4px 16px rgba(13,27,42,0.2);
+}
+
+.item h4 { font-weight: 700; color: var(--deep); margin-bottom: 4px; font-size: 1rem; }
+.item p, .item a { color: #475569; text-decoration: none; font-size: 0.95rem; line-height: 1.6; }
+.item a:hover { color: var(--deep); }
+
+.btnRow { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 12px; }
+
+.phoneBtn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--red);
+  color: white; padding: 11px 24px; border-radius: 30px;
+  text-decoration: none; font-weight: 700; font-size: 0.9rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 16px rgba(230,57,70,0.3);
+}
+.waBtn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: #25d366;
+  color: white; padding: 11px 24px; border-radius: 30px;
+  text-decoration: none; font-weight: 700; font-size: 0.9rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 16px rgba(37,211,102,0.3);
+}
+.phoneBtn:hover, .waBtn:hover { transform: translateY(-2px); filter: brightness(1.1); }
+
+.map {
+  border-radius: 16px;
+  overflow: hidden;
+  border: 3px solid var(--deep);
+  box-shadow: 0 10px 40px rgba(13,27,42,0.15);
+}
+.map iframe { width: 100%; height: 420px; border: none; display: block; }
+
+.mapBtns { display: flex; gap: 12px; margin-top: 14px; }
+.mapBtn {
+  flex: 1;
+  background: var(--deep);
+  color: var(--gold);
+  padding: 11px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-align: center;
+  border: 2px solid var(--deep);
+  transition: all 0.3s;
+}
+.mapBtn:hover { background: var(--gold); color: var(--deep); border-color: var(--gold); }
+
+@media (max-width: 900px) {
+  .inner { grid-template-columns: 1fr; }
+}
