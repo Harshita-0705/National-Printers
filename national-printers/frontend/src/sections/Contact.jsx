@@ -24,7 +24,7 @@ export default function Contact() {
             <div className={styles.iconBox}>📍</div>
             <div>
               <h4>Address</h4>
-              <p>12/272 Bunglow Road, Club Galli,<br />Opposite IM Fit, Ichalkaranji,<br />Maharashtra 416115</p>
+              <p>12/270 Bunglow Road,<br />Opposite IM Fit Club Galli,<br />Ichalkaranji, Maharashtra 416115</p>
             </div>
           </div>
           <div className={styles.item}>
@@ -39,7 +39,7 @@ export default function Contact() {
         <div>
           <div className={styles.map}>
             <iframe
-              src="https://maps.google.com/maps?q=12/272+Bunglow+Road+Club+Galli+Ichalkaranji+Maharashtra&output=embed&z=15"
+              src="https://maps.google.com/maps?q=12/270+Bunglow+Road+Club+Galli+Ichalkaranji+Maharashtra&output=embed&z=15"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -48,7 +48,6 @@ export default function Contact() {
           </div>
           <div className={styles.mapBtns}>
             <a href="https://www.google.com/maps/search/Original+National+Printers+Ichalkaranji" target="_blank" rel="noreferrer" className={styles.mapBtn}>📍 Open Maps</a>
-            <a href="https://www.google.com/maps/dir/?api=1&destination=12/272+Bunglow+Road+Ichalkaranji" target="_blank" rel="noreferrer" className={styles.mapBtn}>🧭 Directions</a>
           </div>
         </div>
       </div>
