@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
@@ -13,10 +12,10 @@ export default function Navbar() {
       </div>
 
       <ul className={`${styles.links} ${open ? styles.open : ''}`}>
-        <li><a href="/#about" onClick={() => setOpen(false)}>About</a></li>
-        <li><a href="/#services" onClick={() => setOpen(false)}>Services</a></li>
-        <li><a href="/#gallery" onClick={() => setOpen(false)}>Gallery</a></li>
-        <li><Link to="/contact" onClick={() => setOpen(false)}>Contact</Link></li>
+        <li><a href="#about" onClick={() => setOpen(false)}>About</a></li>
+        <li><a href="#contact" onClick={() => setOpen(false)}>Contact</a></li>
+        <li><a href="#services" onClick={() => setOpen(false)}>Services</a></li>
+        <li><a href="#gallery" onClick={() => setOpen(false)}>Gallery</a></li>
       </ul>
 
       <div className={styles.right}>
